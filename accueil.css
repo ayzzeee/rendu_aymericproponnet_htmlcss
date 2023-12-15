@@ -1,0 +1,48 @@
+.nav {
+  display: flex;
+  width: vw;
+  background-color: rgb(220, 220, 220);
+  overflow: hidden;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 10px;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+.nav_button {
+  background-color: #a6a6a6;
+  border-radius: 10px;
+  padding: 10px;
+  float: left;
+  list-style-type: none;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+#actu {
+  display: flex;
+}
+
+#actu_desc {
+  width: 200px;
+  padding: 5px;
+  text-align: justify;
+  border: solid black;
+}
+
+#actu_desc > h2 {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+#actu_desc > p {
+  margin: 0px;
+}
