@@ -4,60 +4,116 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HP trading card website</title>
-    <link rel="stylesheet" href="accueil.css" />
+    <link rel="stylesheet" href="css/accueil.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+SC">
   </head>
+
   <body>
-    <nav class="nav">
-      <ul>
-        <li class="nav_button">
-          <a href="accueil.html">Accueil</a>
-        </li>
-        <li class="nav_button">
-          <a href="inventaire.html">Inventaire</a>
-        </li>
-        <li class="nav_button">
-          <a href="">Actualités</a>
-        </li>
-        <li class="nav_button">
-          <a href="">Enchange</a>
-        </li>
-        <li class="nav_button">
-          <a href="">Ouvrir des boosters</a>
-        </li>
-        <li class="nav_button">
-          <a href="">Connexion</a>
-        </li>
-      </ul>
-    </nav>
-    <section id="actu">
-      <div id="actu_desc">
-        <div id="titre">Actualités</div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-          ullamcorper
-        </p>
-      </div>
-      <div id="actu_boxes">
-        <div class="actu_box">Actu n°1</div>
-        <div class="box">Actu n°2</div>
-        <div class="box">Actu n°3</div>
-        <div class="box">Actu n°4</div>
-      </div>
+    <div id="background"></div>
+    <section id="content">
+      <header>
+        <nav id="nav">
+          <ul>
+            <li class="nav_button">
+              <a href="accueil.html">Accueil</a>
+            </li>
+            <li class="nav_button">
+              <a href="#actu">Actualités</a>
+            </li>
+            <li class="nav_button">
+              <a href="#collec_title">Collection complète</a>
+            </li>
+            <li class="nav_button">
+              <a href="boosters.html">Ouvrir des boosters</a>
+            </li>
+            <li class="nav_button">
+              <a href="connexion.html">Connexion</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="logo_container">
+        <img src="img/logo.png" alt="logo jeu de cartes Harry Potter">
+      </section>
+      <section id="actu">
+        <div id="actu_desc">
+          <div id="titre">Actualités</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper
+          </p>
+        </div>
+        <div id="actu_container">
+          <div id="actu_boxes">
+            <div class="box">Actu n°1</div>
+            <div class="box">Actu n°2</div>
+            <div class="box">Actu n°3</div>
+            <div class="box">Actu n°4</div>
+            <div class="box">Actu n°1</div>
+            <div class="box">Actu n°2</div>
+            <div class="box">Actu n°3</div>
+            <div class="box">Actu n°4</div>
+          </div>
+        </div>
+      </section>
+      <div id="collec_title">Collection complète</div>
+      <section id="collec">
+        <div id="collec_filters">
+          <div id="collec_filters_title">Filtres</div>
+          <div class="filtre_cat_1">
+            <input type="checkbox" class="checkbox" name="prof"/>
+            <label for="prof">Professeur</label>
+          </div>
+          <div class="filtre_cat_1">
+            <input type="checkbox" class="checkbox" name="mangemort"/>
+            <label for="mangemort">Mangemort</label>
+          </div>
+          <div class="filtre_cat_1">
+            <input type="checkbox" class="checkbox" name="apprenti"/>
+            <label for="apprenti">Apprenti sorcier</label>
+          </div>
+          <div id="filtre_txt">Maison :</div>
+          <div class="filtre_cat_2">
+            <input type="checkbox" class="checkbox" name="gryffondor"/>
+            <label for="gryffondor">Gryffondor</label>
+          </div>
+          <div class="filtre_cat_2">
+            <input type="checkbox" class="checkbox" name="serpentard"/>
+            <label for="serpentard">Serpentard</label>
+          </div>
+          <div class="filtre_cat_2">
+            <input type="checkbox" class="checkbox" name="serdaigle"/>
+            <label for="serdaigle">Serdaigle</label>
+          </div>
+          <div class="filtre_cat_2">
+            <input type="checkbox" class="checkbox" name="poufsouffle"/>
+            <label for="poufsouffle">Poufsouffle</label>
+          </div>
+
+        </div>
+        <ul id="collec_cards">
+          <li class="collec_box">Carte 1</li>
+          <li class="collec_box">Carte 2</li>
+          <li class="collec_box">Carte 3</li>
+          <li class="collec_box">Carte 4</li>
+          <li class="collec_box">Carte 5</li>
+          <li class="collec_box">Carte 6</li>
+          <li class="collec_box">Carte 7</li>
+          <li class="collec_box">Carte 8</li>
+          <li class="collec_box">Carte 9</li>
+          <li class="collec_box">Carte 10</li>
+          <li class="collec_box">Carte 11</li>
+          <li class="collec_box">Carte 12</li>
+          <li class="collec_box">Carte 13</li>
+        </ul>
+      </section>
     </section>
-    <section id="collec">
-      <div id="collec_left">
-        <h2>Collection complète</h2>
-        <h5>Filtres</h5>
-      </div>
-      <div id="collec_cards">
-        <div class="collec_box">Carte 1</div>
-        <div class="collec_box">Carte 2</div>
-        <div class="collec_box">Carte 3</div>
-        <div class="collec_box">Carte 4</div>
-      </div>
-    </section>
+    <footer>
+      <img src="img/logo.png" alt="logo">
+      <div class="footer_txt">Copyright © 2023 | Mentions légales | Politique de Confidentialité | Gestion des cookies</div>
+    </footer>
   </body>
-  <footer></footer>
+  
 </html>
